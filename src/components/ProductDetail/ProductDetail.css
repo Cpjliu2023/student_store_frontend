@@ -1,0 +1,104 @@
+.ProductDetail {
+  width: 100%;
+  max-width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.is-danger {
+  color: var(--bright-red);
+}
+.ProductDetail .product-card {
+  min-height: 350px;
+  min-width: 450px;
+  max-height: 600px;
+  max-width: 800px;
+  background: var(--pure-white);
+  display: flex;
+  flex-direction: column;
+  border: solid 1px var(--border-color);
+  margin: 0 auto;
+}
+.ProductDetail .media {
+  min-height: 350px;
+  min-width: 250px;
+  max-height: 500px;
+  max-width: 800px;
+  width: 100%;
+}
+.ProductDetail .media img {
+  min-height: 348px;
+  min-width: 250px;
+  max-height: 450px;
+  max-width: 800px;
+}
+.ProductDetail .product-info {
+  flex: 1;
+  display: flex;
+  border-top: solid 1px var(--border-color);
+}
+.ProductDetail .info {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+}
+.ProductDetail .info .product-name {
+  font-size: 15px;
+  font-weight: 500;
+}
+.ProductDetail .info .product-price {
+  font-size: 14px;
+}
+.ProductDetail .desc {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px 40px 8px 12px;
+}
+.ProductDetail .actions {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.ProductDetail .actions .quantity {
+  width: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 5px;
+}
+.ProductDetail .actions .quantity .amt {
+  background: var(--accent-orange);
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ProductDetail .actions .buttons {
+  width: 80px;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.ProductDetail .actions .buttons i {
+  width: 20px;
+  height: 20px;
+  border: solid 1px var(--bright-green);
+  color: var(--bright-green);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin: 10px 5px;
+}
