@@ -20,7 +20,7 @@ export default function ProductDetail({ getQuantityOfItemInCart, addToCart, remo
       setIsFetching(true)
 
       try {
-        const res = await axios.get(`https://student-store-backend.onrender.com//store/${productId}`)
+        const res = await axios.get(`https://student-store-backend.onrender.com/store/${productId}`)
         if (res?.data?.product) {
           setProduct(res.data.product)
         } else {

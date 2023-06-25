@@ -41,7 +41,7 @@ export default function App() {
     setIsCheckingOut(true)
 
     try {
-      const res = await axios.post("https://student-store-backend.onrender.com//store", { cart, userInfo })
+      const res = await axios.post("https://student-store-backend.onrender.com/store", { cart, userInfo })
       if (res?.data?.purchase) {
         setIsCheckingOut(false)
         setCart({})
@@ -63,7 +63,7 @@ export default function App() {
       setIsFetching(true)
 
       try {
-        const res = await axios.get("https://student-store-backend.onrender.com//store")
+        const res = await axios.get("https://student-store-backend.onrender.com/store")
         if (res?.data?.products) {
           setProducts(res.data.products)
         } else {
